@@ -10,7 +10,7 @@ class Helper {
 					client_secret:"",
 					v:"20181003"
 			};
-			return object.keys(keys)
+			return Object.keys(keys)
 				.map(key => `${key}=${keys[key]}`)
 				.join("&")
 	}
@@ -19,7 +19,7 @@ class Helper {
 		if(!urlPrams) {
 			return ""
 		}
-		return object.keys(urlPrams)
+		return Object.keys(urlPrams)
 			.map(key => `${key}=${urlPrams[key]}`)
 			.join("&")
 	}
